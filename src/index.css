@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Playfair Display', serif;
+	font-optical-sizing: auto;
+	background-color: #fffdf4;
+	height: 100dvh;
+}
+
+.flowers {
+	background-image: url('../public/images/bg-flowers-left.svg'),
+		url('../public/images/bg-flowers-right.svg'),
+		url('../public/images/bg-flowers-top.svg');
+	background-position: left top, right top, center top;
+	background-repeat: repeat-y, repeat-y, repeat-x;
+	background-size: 10%, 10%, 40%;
+}
+
+@media screen and (max-width: 640px) {
+	.flowers {
+		background-size: 12%, 12%, 70%;
+	}
+}
